@@ -30,7 +30,7 @@ dispatcher = updater.dispatcher
 
 def Start(update, context):
     data = '\nTinggalkan Pesan Anda Dengan Menggunakan Perintah \n• /msg <pesan> \n\ncontoh: /msg hai'
-    update.message.reply_text("```\nSelamat Datang Di\nPɪɴᴜʀᴜɴ Lɪᴍɪᴛᴀᴛɪ" + data + "\n```", parse_mode=ParseMode.MARKDOWN)
+    update.message.reply_text("Selamat Datang Di\nPɪɴᴜʀᴜɴ Lɪᴍɪᴛᴀᴛɪ ```" + data + "\n```", parse_mode=ParseMode.MARKDOWN)
 
 def Reply(update, context):
     msg = update.message.text
