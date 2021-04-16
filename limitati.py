@@ -29,7 +29,7 @@ updater = Updater(token=TOKEN, use_context=True)
 dispatcher = updater.dispatcher 
 
 def Start(update, context):
-    data = 'Silahkan Tinggalkan Pesan Anda dan Gunakan Perintah : \n•/nmsg <pesan> \n\ncontoh: /msg hai'
+    data = 'Silahkan Tinggalkan Pesan Anda dan Gunakan Perintah : \n•/msg <pesan> \n\ncontoh: /msg hai'
     update.message.reply_text("```\n" + data + "\n```", parse_mode=ParseMode.MARKDOWN)
 
 def Reply(update, context):
