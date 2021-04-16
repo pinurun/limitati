@@ -29,8 +29,8 @@ updater = Updater(token=TOKEN, use_context=True)
 dispatcher = updater.dispatcher 
 
 def Start(update, context):
-    data = 'Welcome To Pɪɴᴜʀᴜɴ Lɪᴍɪᴛᴀᴛɪ\nTinggalkan Pesan Anda Dengan Menggunakan Perintah \n• /msg <pesan> \n\ncontoh: /msg hai'
-    update.message.reply_text("```\n" + data + "\n```", parse_mode=ParseMode.MARKDOWN)
+    data = '\nTinggalkan Pesan Anda Dengan Menggunakan Perintah \n• /msg <pesan> \n\ncontoh: /msg hai'
+    update.message.reply_text("```\nSelamat Datang Di\nPɪɴᴜʀᴜɴ Lɪᴍɪᴛᴀᴛɪ" + data + "\n```", parse_mode=ParseMode.MARKDOWN)
 
 def Reply(update, context):
     msg = update.message.text
@@ -41,7 +41,7 @@ def SendToCreator(update, context):
     msg = update.effective_message
     text = update.effective_message.text
     frst = text.replace("/msg", "")
-    scn = frst.replace("Welcome To Pɪɴᴜʀᴜɴ Lɪᴍɪᴛᴀᴛɪ\nTinggalkan Pesan Anda Dengan Menggunakan Perintah \n• /msg <pesan> \n\n", "")
+    scn = frst.replace("Selamat Datang Di\nPɪɴᴜʀᴜɴ Lɪᴍɪᴛᴀᴛɪ\nTinggalkan Pesan Anda Dengan Menggunakan Perintah \n• /msg <pesan> \n\n", "")
     gg = scn.replace("contoh: /msg hai", "")
     chat_id = update.effective_chat.id
     message = "*1 Pesan Baru dari* [{name}](tg://user?id={id})\n{message}".format(name=name, id=msg.from_user.id, message=gg)
