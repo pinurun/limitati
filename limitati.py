@@ -65,5 +65,5 @@ dispatcher.add_handler(feedback_handler)
 dispatcher.add_handler(logger_handler)
 
 __log__ = logging.getLogger()
-__log__.info("GG-MTL Started..")
+__log__.info("Pinurun-lim Started..")
 updater.start_polling()
